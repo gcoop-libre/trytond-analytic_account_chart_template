@@ -1,0 +1,175 @@
+#
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "field:analytic_account.account,template:"
+msgid "Template"
+msgstr "Plantilla"
+
+msgctxt "field:analytic_account.create_chart.account,account_template:"
+msgid "Account Template"
+msgstr "Plantilla de cuenta"
+
+msgctxt "field:analytic_account.create_chart.account,company:"
+msgid "Company"
+msgstr "Empresa"
+
+msgctxt "field:analytic_account.create_chart.account,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:analytic_account.create_chart.start,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:analytic_account.template,childs:"
+msgid "Children"
+msgstr "Hijos"
+
+msgctxt "field:analytic_account.template,code:"
+msgid "Code"
+msgstr "Código"
+
+msgctxt "field:analytic_account.template,create_date:"
+msgid "Create Date"
+msgstr "Fecha de creación"
+
+msgctxt "field:analytic_account.template,create_uid:"
+msgid "Create User"
+msgstr "Usuario de creación"
+
+msgctxt "field:analytic_account.template,display_balance:"
+msgid "Display Balance"
+msgstr "Mostrar saldo"
+
+msgctxt "field:analytic_account.template,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:analytic_account.template,mandatory:"
+msgid "Mandatory"
+msgstr "Obligatorio"
+
+msgctxt "field:analytic_account.template,name:"
+msgid "Name"
+msgstr "Nombre"
+
+msgctxt "field:analytic_account.template,parent:"
+msgid "Parent"
+msgstr "Padre"
+
+msgctxt "field:analytic_account.template,rec_name:"
+msgid "Name"
+msgstr "Nombre"
+
+msgctxt "field:analytic_account.template,root:"
+msgid "Root"
+msgstr "Raíz"
+
+msgctxt "field:analytic_account.template,state:"
+msgid "State"
+msgstr "Estado"
+
+msgctxt "field:analytic_account.template,type:"
+msgid "Type"
+msgstr "Tipo"
+
+msgctxt "field:analytic_account.template,write_date:"
+msgid "Write Date"
+msgstr "Fecha de modificación"
+
+msgctxt "field:analytic_account.template,write_uid:"
+msgid "Write User"
+msgstr "Usuario de modificación"
+
+msgctxt "help:analytic_account.template,mandatory:"
+msgid "Make this account mandatory when filling documents"
+msgstr "Hacer a esta cuenta obligatoria cuando se introduzcan documentos"
+
+msgctxt "model:analytic_account.create_chart.account,name:"
+msgid "Create Chart"
+msgstr "Crear plan analítico"
+
+msgctxt "model:analytic_account.create_chart.start,name:"
+msgid "Create Chart"
+msgstr "Crear plan analítico"
+
+msgctxt "model:analytic_account.template,name:"
+msgid "Analytic Account Template"
+msgstr "Plantilla de cuenta analítica"
+
+msgctxt "model:ir.action,name:act_analytic_account_template_tree"
+msgid "Analytic Account Templates"
+msgstr "Plantillas de cuenta analítica"
+
+msgctxt "model:ir.action,name:wizard_create_chart"
+msgid "Create Chart of Analytic Accounts from Template"
+msgstr "Crear plan analítico desde plantilla"
+
+msgctxt "model:ir.ui.menu,name:menu_analytic_account_template_tree"
+msgid "Analytic Account Templates"
+msgstr "Plantillas de cuenta analítica"
+
+msgctxt "model:ir.ui.menu,name:menu_create_chart"
+msgid "Create Chart of Analytic Accounts from Template"
+msgstr "Crear plan analítico desde plantilla"
+
+msgctxt "selection:analytic_account.template,display_balance:"
+msgid "Credit - Debit"
+msgstr "Haber - Debe"
+
+msgctxt "selection:analytic_account.template,display_balance:"
+msgid "Debit - Credit"
+msgstr "Debe - Haber"
+
+msgctxt "selection:analytic_account.template,state:"
+msgid "Closed"
+msgstr "Cerrada"
+
+msgctxt "selection:analytic_account.template,state:"
+msgid "Draft"
+msgstr "Borrador"
+
+msgctxt "selection:analytic_account.template,state:"
+msgid "Opened"
+msgstr "Abierta"
+
+msgctxt "selection:analytic_account.template,type:"
+msgid "Distribution"
+msgstr "Distribución"
+
+msgctxt "selection:analytic_account.template,type:"
+msgid "Normal"
+msgstr "Normal"
+
+msgctxt "selection:analytic_account.template,type:"
+msgid "Root"
+msgstr "Raíz"
+
+msgctxt "selection:analytic_account.template,type:"
+msgid "View"
+msgstr "Vista"
+
+msgctxt "view:analytic_account.create_chart.start:"
+msgid ""
+"You can now create a chart of analytic account for your company by selecting"
+" a chart of account template."
+msgstr ""
+"Ahora puede crear un plan analítico para su empresa seleccionando una "
+"plantilla de plan analítico."
+
+msgctxt "wizard_button:analytic_account.create_chart,account,create_account:"
+msgid "Create"
+msgstr "Crear"
+
+msgctxt "wizard_button:analytic_account.create_chart,account,end:"
+msgid "Cancel"
+msgstr "Cancelar"
+
+msgctxt "wizard_button:analytic_account.create_chart,start,account:"
+msgid "OK"
+msgstr "Aceptar"
+
+msgctxt "wizard_button:analytic_account.create_chart,start,end:"
+msgid "Cancel"
+msgstr "Cancelar"
