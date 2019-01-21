@@ -8,8 +8,8 @@ from . import account
 
 def register():
     Pool.register(
-        account.Account,
         account.AccountTemplate,
+        account.Account,
         account.CreateChartStart,
         account.CreateChartAccount,
         module='analytic_account_chart_template', type_='model')
