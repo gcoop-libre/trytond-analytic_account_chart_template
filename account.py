@@ -9,8 +9,8 @@ from trytond.pyson import Eval
 from trytond.transaction import Transaction
 from trytond.pool import Pool, PoolMeta
 
-__all__ = ['Account', 'AccountTemplate', 'CreateChartStart', 'CreateChartAccount',
-    'CreateChart']
+__all__ = ['Account', 'AccountTemplate', 'CreateChartStart',
+    'CreateChartAccount', 'CreateChart']
 
 
 class Account:
@@ -31,8 +31,10 @@ class AccountTemplate(ModelSQL, ModelView):
         ('distribution', 'Distribution'),
         ], 'Type', required=True)
     root = fields.Many2One('analytic_account.template', 'Root', select=True)
-    parent = fields.Many2One('analytic_account.template', 'Parent', select=True)
-    childs = fields.One2Many('analytic_account.template', 'parent', 'Children')
+    parent = fields.Many2One('analytic_account.template', 'Parent',
+        select=True)
+    childs = fields.One2Many('analytic_account.template', 'parent',
+        'Children')
     state = fields.Selection([
         ('draft', 'Draft'),
         ('opened', 'Opened'),
@@ -47,7 +49,6 @@ class AccountTemplate(ModelSQL, ModelView):
             },
         depends=['type'],
         help="Make this account mandatory when filling documents")
-
 
     @classmethod
     def __setup__(cls):
