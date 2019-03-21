@@ -13,8 +13,7 @@ __all__ = ['Account', 'AccountTemplate', 'CreateChartStart',
     'CreateChartAccount', 'CreateChart']
 
 
-class Account:
-    __metaclass__ = PoolMeta
+class Account(metaclass=PoolMeta):
     __name__ = 'analytic_account.account'
     template = fields.Many2One('analytic_account.template', 'Template')
 
