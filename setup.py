@@ -64,7 +64,7 @@ setup(name=name,
         ],
     package_data={
         'trytond.modules.analytic_account_chart_template': (info.get('xml', [])
-            + ['tryton.cfg', 'view/*.xml', 'locale/*.po', 'data/*.xml']),
+            + ['tryton.cfg', 'view/*.xml', 'locale/*.po']),
         },
     classifiers=[
         'Development Status :: 4 - Beta',
