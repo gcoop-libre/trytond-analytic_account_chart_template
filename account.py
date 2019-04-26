@@ -55,11 +55,6 @@ class AccountTemplate(ModelSQL, ModelView):
         cls._order.insert(0, ('code', 'ASC'))
         cls._order.insert(1, ('name', 'ASC'))
 
-    @classmethod
-    def validate(cls, templates):
-        super(AccountTemplate, cls).validate(templates)
-        cls.check_recursion(templates)
-
     @staticmethod
     def default_type():
         return 'normal'
