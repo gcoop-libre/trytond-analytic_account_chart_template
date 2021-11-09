@@ -14,14 +14,6 @@ msgctxt "field:analytic_account.create_chart.account,company:"
 msgid "Company"
 msgstr "Empresa"
 
-msgctxt "field:analytic_account.create_chart.account,id:"
-msgid "ID"
-msgstr "ID"
-
-msgctxt "field:analytic_account.create_chart.start,id:"
-msgid "ID"
-msgstr "ID"
-
 msgctxt "field:analytic_account.template,childs:"
 msgid "Children"
 msgstr "Hijos"
@@ -30,25 +22,9 @@ msgctxt "field:analytic_account.template,code:"
 msgid "Code"
 msgstr "Código"
 
-msgctxt "field:analytic_account.template,create_date:"
-msgid "Create Date"
-msgstr "Fecha de creación"
-
-msgctxt "field:analytic_account.template,create_uid:"
-msgid "Create User"
-msgstr "Usuario de creación"
-
 msgctxt "field:analytic_account.template,display_balance:"
 msgid "Display Balance"
 msgstr "Mostrar saldo"
-
-msgctxt "field:analytic_account.template,id:"
-msgid "ID"
-msgstr "ID"
-
-msgctxt "field:analytic_account.template,mandatory:"
-msgid "Mandatory"
-msgstr "Obligatorio"
 
 msgctxt "field:analytic_account.template,name:"
 msgid "Name"
@@ -57,10 +33,6 @@ msgstr "Nombre"
 msgctxt "field:analytic_account.template,parent:"
 msgid "Parent"
 msgstr "Padre"
-
-msgctxt "field:analytic_account.template,rec_name:"
-msgid "Name"
-msgstr "Nombre"
 
 msgctxt "field:analytic_account.template,root:"
 msgid "Root"
@@ -73,18 +45,6 @@ msgstr "Estado"
 msgctxt "field:analytic_account.template,type:"
 msgid "Type"
 msgstr "Tipo"
-
-msgctxt "field:analytic_account.template,write_date:"
-msgid "Write Date"
-msgstr "Fecha de modificación"
-
-msgctxt "field:analytic_account.template,write_uid:"
-msgid "Write User"
-msgstr "Usuario de modificación"
-
-msgctxt "help:analytic_account.template,mandatory:"
-msgid "Make this account mandatory when filling documents"
-msgstr "Hacer a esta cuenta obligatoria cuando se introduzcan documentos"
 
 msgctxt "model:analytic_account.create_chart.account,name:"
 msgid "Create Chart"
