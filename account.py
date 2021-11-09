@@ -2,22 +2,23 @@
 # at the top level of this repository contains the full copyright notices
 # and license terms.
 
-
 from trytond.model import ModelView, ModelSQL, fields
 from trytond.wizard import Wizard, StateView, StateTransition, Button
+from trytond.pool import Pool, PoolMeta
 from trytond.pyson import Eval
 from trytond.transaction import Transaction
-from trytond.pool import Pool, PoolMeta
 
 
 class Account(metaclass=PoolMeta):
     __name__ = 'analytic_account.account'
+
     template = fields.Many2One('analytic_account.template', 'Template')
 
 
 class AccountTemplate(ModelSQL, ModelView):
     'Analytic Account Template'
     __name__ = 'analytic_account.template'
+
     name = fields.Char('Name', size=None, required=True, select=True)
     code = fields.Char('Code', size=None, select=True)
     type = fields.Selection([
@@ -143,6 +144,7 @@ class CreateChartStart(ModelView):
 class CreateChartAccount(ModelView):
     'Create Chart'
     __name__ = 'analytic_account.create_chart.account'
+
     company = fields.Many2One('company.company', 'Company', required=True)
     account_template = fields.Many2One('analytic_account.template',
             'Account Template', required=True, domain=[('parent', '=', None)])
@@ -155,6 +157,7 @@ class CreateChartAccount(ModelView):
 class CreateChart(Wizard):
     'Create Chart'
     __name__ = 'analytic_account.create_chart'
+
     start = StateView('analytic_account.create_chart.start',
         'analytic_account_chart_template.create_chart_start_view_form', [
             Button('Cancel', 'end', 'tryton-cancel'),
