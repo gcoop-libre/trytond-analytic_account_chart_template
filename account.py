@@ -9,9 +9,6 @@ from trytond.pyson import Eval
 from trytond.transaction import Transaction
 from trytond.pool import Pool, PoolMeta
 
-__all__ = ['Account', 'AccountTemplate', 'CreateChartStart',
-    'CreateChartAccount', 'CreateChart']
-
 
 class Account(metaclass=PoolMeta):
     __name__ = 'analytic_account.account'
