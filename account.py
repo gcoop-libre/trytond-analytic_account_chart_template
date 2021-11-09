@@ -51,7 +51,7 @@ class AccountTemplate(ModelSQL, ModelView):
 
     @classmethod
     def __setup__(cls):
-        super(AccountTemplate, cls).__setup__()
+        super().__setup__()
         cls._order.insert(0, ('code', 'ASC'))
         cls._order.insert(1, ('name', 'ASC'))
 
