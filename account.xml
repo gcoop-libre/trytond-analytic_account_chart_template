@@ -1,8 +1,9 @@
 <?xml version="1.0"?>
-<!-- This file is part of Tryton.  The COPYRIGHT file at the top level of
-this repository contains the full copyright notices and license terms. -->
 <tryton>
     <data>
+
+<!-- Analytic Account Templates -->
+
         <record model="ir.ui.view" id="analytic_account_template_view_form">
             <field name="model">analytic_account.template</field>
             <field name="type">form</field>
@@ -21,6 +22,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="field_childs">childs</field>
             <field name="name">analytic_account_template_tree</field>
         </record>
+
         <record model="ir.action.act_window" id="act_analytic_account_template_tree">
             <field name="name">Analytic Account Templates</field>
             <field name="res_model">analytic_account.template</field>
@@ -36,6 +38,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="view" ref="analytic_account_template_view_form"/>
             <field name="act_window" ref="act_analytic_account_template_tree"/>
         </record>
+
         <menuitem parent="account.menu_templates"
             action="act_analytic_account_template_tree" id="menu_analytic_account_template_tree"
             sequence="20"/>
@@ -48,12 +51,13 @@ this repository contains the full copyright notices and license terms. -->
             <field name="perm_delete" eval="False"/>
         </record>
 
+<!-- Create Chart of Analytic Accounts from Template -->
+
         <record model="ir.ui.view" id="create_chart_start_view_form">
             <field name="model">analytic_account.create_chart.start</field>
             <field name="type">form</field>
             <field name="name">create_chart_start_form</field>
         </record>
-
         <record model="ir.ui.view" id="create_chart_account_view_form">
             <field name="model">analytic_account.create_chart.account</field>
             <field name="type">form</field>
@@ -64,8 +68,10 @@ this repository contains the full copyright notices and license terms. -->
             <field name="name">Create Chart of Analytic Accounts from Template</field>
             <field name="wiz_name">analytic_account.create_chart</field>
         </record>
+
         <menuitem parent="account.menu_templates"
             action="wizard_create_chart" id="menu_create_chart"
             sequence="90"/>
+
     </data>
 </tryton>
