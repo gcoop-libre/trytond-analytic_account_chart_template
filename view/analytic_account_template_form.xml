@@ -12,7 +12,4 @@ this repository contains the full copyright notices and license terms. -->
     <field name="parent"/>
     <label name="type"/>
     <field name="type"/>
-    <newline/>
-    <label name="mandatory"/>
-    <field name="mandatory"/>
 </form>

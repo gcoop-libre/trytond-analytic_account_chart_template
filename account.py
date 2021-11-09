@@ -40,11 +40,6 @@ class AccountTemplate(ModelSQL, ModelView):
         ('debit-credit', 'Debit - Credit'),
         ('credit-debit', 'Credit - Debit'),
         ], 'Display Balance', required=True)
-    mandatory = fields.Boolean('Mandatory', states={
-            'invisible': Eval('type') != 'root',
-            },
-        depends=['type'],
-        help="Make this account mandatory when filling documents")
 
     @classmethod
     def __setup__(cls):
@@ -63,10 +58,6 @@ class AccountTemplate(ModelSQL, ModelView):
     @staticmethod
     def default_display_balance():
         return 'credit-debit'
-
-    @staticmethod
-    def default_mandatory():
-        return False
 
     def get_rec_name(self, name):
         if self.code:
@@ -98,8 +89,6 @@ class AccountTemplate(ModelSQL, ModelView):
             res['type'] = self.type
         if not account or account.state != self.state:
             res['state'] = self.state
-        if not account or account.mandatory != self.mandatory:
-            res['mandatory'] = self.mandatory
         if not account or account.template != self:
             res['template'] = self.id
         return res
